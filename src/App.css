@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  background-color: #f2f2f2;
+  font-family: Roboto, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 42px;
+  background-color: #4a90e2;
+}
+
+header img {
+  height: 24px;
+  width: auto;
+}
+
+header .account {
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+header .account > span {
+  font-weight: bold;
+  margin-right: 9px;
+  font-size: 15px;
+}
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.post {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.133916);
+}
+
+.post ~ .post {
+  margin-top: 20px;
+}
+
+.post > div {
+  padding: 20px;
+}
+
+.post__header {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 15px;
+}
+
+.author__avatar {
+  max-width: 32px;
+  max-height: 32px;
+  min-width: 32px;
+  min-height: 32px;
+  border-radius: 16px;
+}
+
+.post__header > div {
+  margin-left: 10px;
+}
+
+.author__name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #4a4a4a;
+}
+
+.post__date {
+  font-size: 11px;
+  line-height: 13px;
+  color: #9a9a9a;
+}
+
+.post__content {
+  font-size: 14px;
+  line-height: 22px;
+  color: #3e3e3e;
+  font-weight: normal;
+}
+
+.post hr {
+  background-color: #eeeeee;
+  border: none;
+  color: #eeeeee;
+  height: 1px;
+  margin: 20px 0;
+}
+
+.post__comments {
+  display: flex;
+  flex-direction: column;
+}
+
+.post__comment {
+  display: flex;
+}
+
+.post__comment ~ .post__comment {
+  margin-top: 10px;
+}
+
+.comment__content {
+  border-radius: 16px;
+  background-color: #eeeeee;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.comment__content p {
+  font-size: 13px;
+  line-height: 20px;
+  color: #3e3e3e;
+  padding: 10px;
+}
+
+.comment__author__avatar {
+  max-width: 28px;
+  max-height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  border-radius: 14px;
+}
+
+.comment__author__name {
+  font-weight: bold;
+}
